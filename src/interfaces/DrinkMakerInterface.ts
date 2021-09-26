@@ -1,5 +1,9 @@
-interface DrinkMakerInterface {
+interface DrinkMaker {
   makeDrink(): string;
 }
 
-export { DrinkMakerInterface };
+interface DrinkMakerInterface {
+  exec(): string;
+}
+
+export { DrinkMaker, DrinkMakerInterface };
