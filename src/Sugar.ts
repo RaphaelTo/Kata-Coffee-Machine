@@ -1,10 +1,14 @@
 import { SugarInterface } from './interfaces/SugarInterface';
 
 class Sugar implements SugarInterface {
-  protected _countSugar: number;
+  private _countSugar: number;
 
   constructor(sugar: number) {
     this._countSugar = sugar;
+  }
+
+  public getCountSugar(): number {
+    return this._countSugar;
   }
 
   public checkWouldLikeSugar(countSugar: number): string {
