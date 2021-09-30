@@ -1,13 +1,15 @@
 import { DrinkMaker } from './interfaces/DrinkMakerInterface';
 import Sugar from './Sugar';
 
-class TeaMaker extends Sugar implements DrinkMaker {
-  constructor(countSugar: number) {
-    super(countSugar);
+class TeaMaker implements DrinkMaker {
+  private _sugar: Sugar;
+
+  constructor(sugar: Sugar) {
+    this._sugar = sugar;
   }
 
   public makeDrink(): string {
-    return `T${this.checkWouldLikeSugar(this._countSugar)}`;
+    return `T${this._sugar.checkWouldLikeSugar(this._sugar.getCountSugar())}`;
   }
 }
 
