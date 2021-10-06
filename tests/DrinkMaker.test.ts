@@ -2,7 +2,7 @@ import Sugar from '../src/Sugar';
 import TeaMaker from '../src/TeaMaker';
 import ChocolateMaker from '../src/ChocolateMaker';
 import CoffeeMaker from '../src/CoffeeMaker';
-import DrinkMaker from '../src/DrinkMaker';
+import DrinkMaker from '../src/DrinkMakerProtocol';
 import DrinkPrice from '../src/DrinkPrice';
 import OrangeJuiceMaker from '../src/OrangeJuiceMaker';
 import HotMaker from '../src/HotMaker';
