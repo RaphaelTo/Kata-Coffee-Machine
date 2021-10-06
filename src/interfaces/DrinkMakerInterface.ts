@@ -2,8 +2,8 @@ interface DrinkMaker {
   makeDrink(): string;
 }
 
-interface DrinkMakerInterface {
+interface DrinkMakerProtocolInterface {
   exec(): string;
 }
 
-export { DrinkMaker, DrinkMakerInterface };
+export { DrinkMaker, DrinkMakerProtocolInterface };
