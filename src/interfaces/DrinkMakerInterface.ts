@@ -4,6 +4,7 @@ interface DrinkMaker {
 
 interface DrinkMakerProtocolInterface {
   exec(): string;
+  checkPrice(drinkInstance: DrinkMaker): boolean;
 }
 
 export { DrinkMaker, DrinkMakerProtocolInterface };
