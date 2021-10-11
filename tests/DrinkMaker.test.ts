@@ -126,12 +126,12 @@ describe('test class DrinkMaker', () => {
     expect(makeDrink).toBe(expectValue);
   });
 
-  test('method makeDrink should return M:message-content if the user dont give enough money', () => {
+  test('method makeDrink should return enough money if the user dont give enough money', () => {
     const sugar: Sugar = new Sugar(0);
     const coffeeMaker: CoffeeMaker = new CoffeeMaker(sugar);
     const price: DrinkPrice = new DrinkPrice(0.4);
     const drinkMaker: DrinkMaker = new DrinkMaker(coffeeMaker, price);
-    const expectValue: string = 'M:message-content';
+    const expectValue: string = 'enough money';
 
     const makeDrink = drinkMaker.exec();
 
